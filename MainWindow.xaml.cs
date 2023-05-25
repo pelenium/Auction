@@ -22,10 +22,13 @@ namespace Auction
     {
         List<Lot> Lots = new List<Lot>();
 
+        /// <TODO>
+        ///     добавить сортировку по убыванию
+        /// </TODO>
+        
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
@@ -34,9 +37,6 @@ namespace Auction
             {
                 try
                 {
-                    /// <TODO>
-                    ///     добавить сортировку по убыванию
-                    /// </TODO>
 
                     float check = float.Parse(LotRate.Text.Replace('.', ','));
 
