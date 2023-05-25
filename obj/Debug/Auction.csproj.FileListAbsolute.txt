@@ -1,0 +1,16 @@
+C:\development\C#\Auction\bin\Debug\Auction.exe.config
+C:\development\C#\Auction\bin\Debug\Auction.exe
+C:\development\C#\Auction\bin\Debug\Auction.pdb
+C:\development\C#\Auction\obj\Debug\Auction.csproj.AssemblyReference.cache
+C:\development\C#\Auction\obj\Debug\Auction.csproj.SuggestedBindingRedirects.cache
+C:\development\C#\Auction\obj\Debug\MainWindow.g.cs
+C:\development\C#\Auction\obj\Debug\App.g.cs
+C:\development\C#\Auction\obj\Debug\Auction_MarkupCompile.cache
+C:\development\C#\Auction\obj\Debug\Auction_MarkupCompile.lref
+C:\development\C#\Auction\obj\Debug\MainWindow.baml
+C:\development\C#\Auction\obj\Debug\Auction.g.resources
+C:\development\C#\Auction\obj\Debug\Auction.Properties.Resources.resources
+C:\development\C#\Auction\obj\Debug\Auction.csproj.GenerateResource.cache
+C:\development\C#\Auction\obj\Debug\Auction.csproj.CoreCompileInputs.cache
+C:\development\C#\Auction\obj\Debug\Auction.exe
+C:\development\C#\Auction\obj\Debug\Auction.pdb
