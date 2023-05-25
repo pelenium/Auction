@@ -136,13 +136,13 @@ namespace Auction
         {
             try
             {
-                label.Content = (float.Parse(rate) + float.Parse(adding.Text)).ToString();
+                label.Content = (float.Parse(rate.Replace('.', ',')) + float.Parse(adding.Text.Replace('.', ','))).ToString().Replace(',', '.');
                 adding.Text = "";
             }
             catch (FormatException)
             {
                 label.Content = rate;
             }
-        }
+}
     }
 }
