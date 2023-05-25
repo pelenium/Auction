@@ -62,18 +62,85 @@
             />
 
         <Label
+            x:Name="timerLabel"
+            Content="00:00:00"
             Grid.Column="5"
-            Grid.Row="1"
-            Content="10:00:00"
             HorizontalContentAlignment="Center"
             VerticalContentAlignment="Center"
-            FontSize="50"
+            FontSize="40"
             HorizontalAlignment="Center"
             VerticalAlignment="Top" 
             Background="#FF242424"
-            Grid.RowSpan="2"
+            Grid.RowSpan="3"
             Foreground="White"
             />
+        <TextBox
+            x:Name="timerTextBox"
+            Grid.Row="2"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Width="150" Grid.Column="5" Margin="62,3,0,0"
+            />
+        <Button 
+            x:Name="setTimerButton" 
+            Content="Старт" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Grid.Row="2" 
+            Width="41" 
+            Click="setTimerButton_Click" 
+            Grid.Column="5" 
+            Margin="217,2,0,0" />
+        <Button 
+            x:Name="startButton" 
+            Content="▶" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Grid.Row="2" 
+            Width="28" 
+            Click="startButton_Click" 
+            Grid.Column="5" 
+            Margin="62,26,0,0" 
+            RenderTransformOrigin="1.75,0.417" />
+        <Button 
+            x:Name="pauseButton"
+            Content="⏸" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Grid.Row="2" 
+            Width="36" 
+            Click="pauseButton_Click"
+            Grid.Column="5"
+            Margin="98,26,0,0" />
+        <Button 
+            x:Name="resetButton"
+            Content="⟲"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Grid.Row="2" Width="27" 
+            Click="resetButton_Click" 
+            Grid.Column="5" 
+            Margin="139,26,0,0" />
+        <Button 
+            x:Name="addMinuteButton" 
+            Content="⬆" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Grid.Row="2" 
+            Width="28" 
+            Click="addMinuteButton_Click" 
+            Grid.Column="5" 
+            Margin="171,26,0,0" />
+        <Button 
+            x:Name="subtractMinuteButton" 
+            Content="⬇" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Grid.Row="2" 
+            Width="28" 
+            Click="addMinuteButton_Click" 
+            Grid.Column="5" 
+            Margin="204,26,0,0" />
         <ScrollViewer 
             x:Name="LotPanel"
             Grid.Column="1"
@@ -87,7 +154,7 @@
             <StackPanel
                 x:Name="stackPanel"
                 >
-                
+
             </StackPanel>
         </ScrollViewer>
 
