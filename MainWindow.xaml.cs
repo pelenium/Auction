@@ -34,7 +34,6 @@ namespace Auction
             {
                 try
                 {
-
                     float check = float.Parse(LotRate.Text.Replace('.', ','));
 
                     Lot lot = new Lot(ref stackPanel);
@@ -46,6 +45,12 @@ namespace Auction
                     lot.RateLabel.Content = LotRate.Text.Replace(',', '.');
 
                     Lots.Add(lot);
+
+                    TextBox additionToRate = new TextBox();
+                    additionToRate.Width = 50;
+                    additionToRate.Height = 36;
+                    additionToRate.Margin = new Thickness(0, 10, 0, 0);
+                    additionToRate.LostFocus += (s, ev) => RateAdd_EndChange(s, ev, lot.RateLabel, lot.RateLabel.Content.ToString(), additionToRate.Text);
 
                     Button DeleteButton = new Button();
                     DeleteButton.Width = 25;
@@ -60,6 +65,7 @@ namespace Auction
                     panel.Children.Add(DeleteButton);
                     panel.Children.Add(lot.InformationLabel);
                     panel.Children.Add(lot.RateLabel);
+                    panel.Children.Add(additionToRate);
 
                     stackPanel.Children.Add(panel);
 
@@ -100,10 +106,18 @@ namespace Auction
             }
         }
 
-        private void DeleteButton_Click(object sender, RoutedEventArgs e, StackPanel panel)
-        {
+        private void DeleteButton_Click(object sender, RoutedEventArgs e, StackPanel panel) => stackPanel.Children.Remove(panel);
 
-            stackPanel.Children.Remove(panel);
+        private void RateAdd_EndChange(object sender, RoutedEventArgs e, Label label, string rate, string adding)
+        {
+            try
+            {
+                label.Content = (float.Parse(rate) + float.Parse(adding)).ToString();
+            }
+            catch (FormatException)
+            {
+                label.Content = rate;
+            }
         }
     }
 }
