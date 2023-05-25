@@ -30,28 +30,44 @@ namespace Auction
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
-            if (LotInformation.Text != null && LotRate != null)
+            if (LotInformation.Text != "" && LotRate.Text != "")
             {
-                Lot lot = new Lot();
+                Lot lot = new Lot(ref stackPanel);
+
+
+                StackPanel panel = new StackPanel();
+                panel.Orientation = Orientation.Horizontal;
 
                 lot.InformationLabel.Content = LotInformation.Text;
                 lot.RateLabel.Content = LotRate.Text;
 
                 Lots.Add(lot);
 
-                lot.InformationLabel.HorizontalAlignment = HorizontalAlignment.Left;
-                lot.InformationLabel.Margin = new Thickness(0, 10, 0, 0);
-                lot.RateLabel.HorizontalAlignment = HorizontalAlignment.Left;
+                Button DeleteButton = new Button();
+                DeleteButton.Width = 25;
+                DeleteButton.Height = 25;
+                DeleteButton.Content = "X";
+                DeleteButton.Foreground = Brushes.White;
+                DeleteButton.Background = new SolidColorBrush(Color.FromArgb(255, 46, 56, 58));
+                DeleteButton.Margin = new Thickness(0, 10, 0, 0);
 
-                stackPanel.Children.Add(lot.InformationLabel);
-                stackPanel.Children.Add(lot.RateLabel);
+                DeleteButton.Click += (s, ev) => DeleteButton_Click(sender, e, panel);
 
+                panel.Children.Add(DeleteButton);
+                panel.Children.Add(lot.InformationLabel);
+                panel.Children.Add(lot.RateLabel);
 
-                Canvas.SetLeft(lot.InformationLabel, 0);
-                Canvas.SetTop(lot.InformationLabel, 38 * (Lots.Count() + 1) - 30);
+                stackPanel.Children.Add(panel);
 
-                
+                LotInformation.Text = "";
+                LotRate.Text = "";
             }
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e, StackPanel panel)
+        {
+
+            stackPanel.Children.Remove(panel);
         }
     }
 }
