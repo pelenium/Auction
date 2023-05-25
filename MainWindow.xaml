@@ -82,11 +82,10 @@
             Grid.RowSpan="1"
             CanContentScroll="True"
             VerticalScrollBarVisibility="Auto"
+            HorizontalScrollBarVisibility="Auto"
             >
             <StackPanel
                 x:Name="stackPanel"
-                MaxHeight="{Binding ElementName=MainForm, Path=ActualHeight}"
-                MaxWidth="{Binding ElementName=MainForm, Path=ActualWidth}" Width="515"
                 >
                 
             </StackPanel>

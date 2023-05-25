@@ -39,13 +39,13 @@ namespace Auction
 
                 Lots.Add(lot);
 
-                lot.InformationLabel.Width = MainForm.ActualWidth * 0.62 * 0.65;
-                lot.InformationLabel.Margin = new Thickness(MainForm.ColumnDefinitions[1].Width, 10, 0, 0);
-                lot.RateLabel.Margin = new Thickness(lot.InformationLabel.Width, -32, 0, 0);
+                lot.InformationLabel.HorizontalAlignment = HorizontalAlignment.Left;
+                lot.InformationLabel.Margin = new Thickness(0, 10, 0, 0);
+                lot.RateLabel.HorizontalAlignment = HorizontalAlignment.Left;
 
                 stackPanel.Children.Add(lot.InformationLabel);
                 stackPanel.Children.Add(lot.RateLabel);
-                LotPanel.UpdateLayout();
+
 
                 Canvas.SetLeft(lot.InformationLabel, 0);
                 Canvas.SetTop(lot.InformationLabel, 38 * (Lots.Count() + 1) - 30);
