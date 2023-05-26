@@ -41,6 +41,7 @@ namespace Auction
             time = new TimeSpan(0, 0, 0);
         }
 
+        #region Timer_Block
         private void Timer_Tick(object sender, EventArgs e)
         {
             time = time.Subtract(TimeSpan.FromSeconds(1));
@@ -108,6 +109,8 @@ namespace Auction
                 MessageBox.Show("Некорректный формат времени. Пожалуйста, введите время в формате hh:mm:ss");
             }
         }
+
+        #endregion
 
         private void AddButton_Click(object sender, RoutedEventArgs e)
         {
