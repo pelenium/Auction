@@ -18,6 +18,7 @@ namespace Auction
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
+    
     public partial class MainWindow : Window
     {
         List<Lot> Lots = new List<Lot>();
