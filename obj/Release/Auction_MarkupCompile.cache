@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\izaga\source\repos\Auction\obj\Debug\
+C:\Users\izaga\source\repos\Auction\obj\Release\
 Auction
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\izaga\source\repos\Auction\App.xaml
 1219584333
 
