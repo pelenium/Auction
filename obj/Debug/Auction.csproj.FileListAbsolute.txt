@@ -14,19 +14,51 @@ C:\development\C#\Auction\obj\Debug\Auction.csproj.GenerateResource.cache
 C:\development\C#\Auction\obj\Debug\Auction.csproj.CoreCompileInputs.cache
 C:\development\C#\Auction\obj\Debug\Auction.exe
 C:\development\C#\Auction\obj\Debug\Auction.pdb
-C:\development\source\Auction\bin\Debug\Auction.exe.config
-C:\development\source\Auction\bin\Debug\Auction.exe
-C:\development\source\Auction\bin\Debug\Auction.pdb
-C:\development\source\Auction\obj\Debug\Auction.csproj.AssemblyReference.cache
-C:\development\source\Auction\obj\Debug\Auction.csproj.SuggestedBindingRedirects.cache
-C:\development\source\Auction\obj\Debug\MainWindow.g.cs
-C:\development\source\Auction\obj\Debug\App.g.cs
-C:\development\source\Auction\obj\Debug\Auction_MarkupCompile.cache
-C:\development\source\Auction\obj\Debug\Auction_MarkupCompile.lref
-C:\development\source\Auction\obj\Debug\MainWindow.baml
-C:\development\source\Auction\obj\Debug\Auction.g.resources
-C:\development\source\Auction\obj\Debug\Auction.Properties.Resources.resources
-C:\development\source\Auction\obj\Debug\Auction.csproj.GenerateResource.cache
-C:\development\source\Auction\obj\Debug\Auction.csproj.CoreCompileInputs.cache
-C:\development\source\Auction\obj\Debug\Auction.exe
-C:\development\source\Auction\obj\Debug\Auction.pdb
+C:\Users\izaga\Source\Repos\Auction\bin\Debug\Auction.exe.config
+C:\Users\izaga\Source\Repos\Auction\bin\Debug\Auction.exe
+C:\Users\izaga\Source\Repos\Auction\bin\Debug\Auction.pdb
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\Auction.csproj.AssemblyReference.cache
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\Auction.csproj.SuggestedBindingRedirects.cache
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\MainWindow.g.cs
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\App.g.cs
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\Auction_MarkupCompile.cache
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\Auction_MarkupCompile.lref
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\MainWindow.baml
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\Auction.g.resources
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\Auction.Properties.Resources.resources
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\Auction.csproj.GenerateResource.cache
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\Auction.csproj.CoreCompileInputs.cache
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\Auction.exe
+C:\Users\izaga\Source\Repos\Auction\obj\Debug\Auction.pdb
+D:\информация пользователя\Downloads\Auction-timer_branch\bin\Debug\Auction.exe.config
+D:\информация пользователя\Downloads\Auction-timer_branch\bin\Debug\Auction.exe
+D:\информация пользователя\Downloads\Auction-timer_branch\bin\Debug\Auction.pdb
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\Auction.csproj.AssemblyReference.cache
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\Auction.csproj.SuggestedBindingRedirects.cache
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\MainWindow.g.cs
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\App.g.cs
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\Auction_MarkupCompile.cache
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\Auction_MarkupCompile.lref
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\MainWindow.baml
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\Auction.g.resources
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\Auction.Properties.Resources.resources
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\Auction.csproj.GenerateResource.cache
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\Auction.csproj.CoreCompileInputs.cache
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\Auction.exe
+D:\информация пользователя\Downloads\Auction-timer_branch\obj\Debug\Auction.pdb
+C:\development\Auction-timer_branch\bin\Debug\Auction.exe.config
+C:\development\Auction-timer_branch\bin\Debug\Auction.exe
+C:\development\Auction-timer_branch\bin\Debug\Auction.pdb
+C:\development\Auction-timer_branch\obj\Debug\Auction.csproj.AssemblyReference.cache
+C:\development\Auction-timer_branch\obj\Debug\Auction.csproj.SuggestedBindingRedirects.cache
+C:\development\Auction-timer_branch\obj\Debug\MainWindow.g.cs
+C:\development\Auction-timer_branch\obj\Debug\App.g.cs
+C:\development\Auction-timer_branch\obj\Debug\Auction_MarkupCompile.cache
+C:\development\Auction-timer_branch\obj\Debug\Auction_MarkupCompile.lref
+C:\development\Auction-timer_branch\obj\Debug\MainWindow.baml
+C:\development\Auction-timer_branch\obj\Debug\Auction.g.resources
+C:\development\Auction-timer_branch\obj\Debug\Auction.Properties.Resources.resources
+C:\development\Auction-timer_branch\obj\Debug\Auction.csproj.GenerateResource.cache
+C:\development\Auction-timer_branch\obj\Debug\Auction.csproj.CoreCompileInputs.cache
+C:\development\Auction-timer_branch\obj\Debug\Auction.exe
+C:\development\Auction-timer_branch\obj\Debug\Auction.pdb
