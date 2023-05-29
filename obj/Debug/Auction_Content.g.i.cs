@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("1-85790-256b.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("substract.png")]
 
 

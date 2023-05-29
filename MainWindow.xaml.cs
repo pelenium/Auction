@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using System.Windows.Threading;
 
 namespace Auction
@@ -28,9 +28,17 @@ namespace Auction
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
 
+            ImageBrush subImg = new ImageBrush();
+            subImg.ImageSource = new BitmapImage(new Uri(@"substract.png", UriKind.Absolute));
+            subtractMinuteButton.Background = subImg;
+
+            ImageBrush addImg = new ImageBrush();
+            addImg.ImageSource = new BitmapImage(new Uri(@"add.png", UriKind.Absolute));
+            addMinuteButton.Background = addImg;
+
             // Изначальное время
 
-            time = new TimeSpan(0, 0, 0);
+            time = new TimeSpan(0, 10, 0); 
         }
 
         #region Timer_Block
@@ -42,7 +50,7 @@ namespace Auction
             {
                 timer.Stop();
                 MessageBox.Show("Время истекло!");
-                time= TimeSpan.Zero;
+                time = TimeSpan.Zero;
             }
 
             UpdateTimerDisplay();
@@ -54,23 +62,33 @@ namespace Auction
             timerLabel.Content = time.ToString(@"hh\:mm\:ss");
         }
 
-        private void startButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (time.TotalSeconds > 0)
-            {
-                timer.Start();
-            }
-        }
-
         private void pauseButton_Click(Object sender, RoutedEventArgs e)
         {
-            timer.Stop();
+            if (timer.IsEnabled)
+            {
+                ImageBrush img = new ImageBrush();
+                img.ImageSource =
+                    new BitmapImage(new Uri(@"", UriKind.Absolute));
+                PlayPauseButton.Background = img;
+                timer.Stop();
+            }
+            else
+            {
+                ImageBrush img = new ImageBrush();
+                img.ImageSource =
+                    new BitmapImage(new Uri(@"", UriKind.Absolute));
+                PlayPauseButton.Background = img;
+                if (time.TotalSeconds > 0)
+                {
+                    timer.Start();
+                }
+            }
         }
 
         private void resetButton_Click(object sender, RoutedEventArgs e)
         {
             timer.Stop();
-            time = new TimeSpan(0, 0, 0);
+            time = new TimeSpan(0, 10, 0);
             UpdateTimerDisplay();
         }
 
@@ -86,19 +104,6 @@ namespace Auction
             {
                 time = time.Subtract(TimeSpan.FromMinutes(1));
                 UpdateTimerDisplay();
-            }
-        }
-
-        private void setTimerButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (TimeSpan.TryParse(timerTextBox.Text, out TimeSpan userInputTime))
-            {
-                time = userInputTime;
-                UpdateTimerDisplay();
-            }
-            else
-            {
-                MessageBox.Show("Некорректный формат времени. Пожалуйста, введите время в формате hh:mm:ss");
             }
         }
 
